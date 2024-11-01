@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trần Nguyễn Thanh Dương\n22115053122110"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonReadMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đọc Tin Nhắn"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textViewMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:paddingTop="16dp"
+            android:text="Tin nhắn sẽ hiển thị ở đây"
+            android:textSize="25sp"
+            android:textStyle="italic"/>
+    </ScrollView>
+</LinearLayout>
